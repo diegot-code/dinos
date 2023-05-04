@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="function.js"></script>
+    <style>
+      body {
+        background: url(img/Dinos_in_Space_background.jpg) no-repeat center
+          center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <?php      
+      include 'images.php';
+      ?>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+    </div>
+    <button onclick="window.print()" id="print">Print</button>
+    <button onclick="history.back()" id="back">Go Back</button>
+  </body>
+</html>

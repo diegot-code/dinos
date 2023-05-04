@@ -1,0 +1,17 @@
+When the print button is clicked, all buttons are shown inside of print preview.
+
+Figure out how to make the entire/specified area a droppable.
+
+THe background image is zoomed in slightly, but noticable.
+
+index.html's css needs to be adjusted where it looks the same on all devices/screen sizes.
+
+Find out a way for only the sidebar to be scrollable.
+
+Find out how to place collapsibles into the sidebar.
+
+
+
+
+
+

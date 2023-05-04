@@ -1,0 +1,135 @@
+#draggable {
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  background-color: transparent;
+  border: none;
+}
+
+/* body {
+  background-image: url(img/Dinos_background-03.jpg);
+  background-size: 100% 650%;
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+} */
+
+h1 {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 90px;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  padding: 25px;
+}
+
+#print,
+#back {
+  background-color: #cdeccd;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#print:hover,
+#back:hover {
+  background-color: #b3e6b3;
+}
+
+/* Collapsable Sidebar */
+.sidebar {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #2de044;
+  overflow: visible;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #1a581b;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+/* /Collapsable Sidebar */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: visible;
+  background-color: #f1f1f1;
+}
